@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 const SITE_URL = 'https://oilandgasconstruction.com'
 const SITE_NAME = 'Oil and Gas Construction (Pty) Ltd'
-const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`
+const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`
 
 function setMeta(attr, key, value) {
   if (!value) return
