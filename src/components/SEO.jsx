@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-const SITE_URL = 'https://www.oilandgasconstruction.co.za'
+const SITE_URL = 'https://oilandgasconstruction.com'
 const SITE_NAME = 'Oil and Gas Construction (Pty) Ltd'
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`
 

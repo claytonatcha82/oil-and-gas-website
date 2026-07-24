@@ -89,7 +89,7 @@ directory with the Vercel CLI. No additional configuration is required — Verce
 framework preset (build command `vite build`, output directory `dist`).
 
 Before going live, update:
-- `index.html` — swap `https://www.oilandgasconstruction.co.za` for the real production domain (canonical, OG, Twitter tags) and the JSON-LD block.
+- `index.html` — swap `https://oilandgasconstruction.com` for the real production domain (canonical, OG, Twitter tags) and the JSON-LD block.
 - `public/robots.txt` and `public/sitemap.xml` — same domain swap.
 - `public/og-image.jpg` — replace the placeholder with a real 1200×630 project photo.
 - `src/components/SEO.jsx` — `SITE_URL` constant at the top.
