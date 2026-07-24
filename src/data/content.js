@@ -1,0 +1,153 @@
+// Central content data for the site. Edit here to update copy across all pages.
+
+export const INDUSTRIES = [
+  { icon: 'Fuel', title: 'Oil & Gas', desc: 'Upstream, midstream and downstream mechanical infrastructure, storage and metering.' },
+  { icon: 'FlaskConical', title: 'Petrochemical', desc: 'Process plant fabrication, pressure vessels, and reactor installation.' },
+  { icon: 'Anchor', title: 'Marine', desc: 'Ship and oil rig repairs, dockside fabrication and marine structural work.' },
+  { icon: 'Mountain', title: 'Mining', desc: 'Structural steel, materials handling and plant maintenance for mining operations.' },
+  { icon: 'Building2', title: 'Civil Infrastructure', desc: 'Civils associated with structural steel and bulk storage tank construction.' },
+  { icon: 'Factory', title: 'Industrial Plants', desc: 'Boilers, heat exchangers, furnaces, columns and stack installation.' },
+  { icon: 'Droplets', title: 'Water & Sanitation', desc: 'Mechanical installation and maintenance for municipal and industrial water works.' },
+  { icon: 'Candy', title: 'Food & Beverage', desc: 'Hygienic mechanical fabrication and plant maintenance, including paper and sugar sectors.' },
+]
+
+export const SERVICES = [
+  { id: 'cost-estimating', icon: 'Calculator', title: 'Project Cost Estimating', short: 'Accurate, detailed cost estimates that keep projects on budget from day one.',
+    body: ['Our estimating department builds detailed, defensible cost models for turnkey and SMEIP scopes — covering materials, labour, plant and subcontract packages.', 'We work from first-principles takeoffs and current supplier pricing, so clients can commit to a budget with confidence before work begins.'],
+    related: ['engineering-design', 'project-management', 'procurement'] },
+  { id: 'engineering-design', icon: 'Ruler', title: 'Engineering & Design', short: 'In-house design capability spanning mechanical, structural and process disciplines.',
+    body: ['From concept through to fabrication-ready drawings, our engineering team develops solutions that meet client specification, applicable codes and site constraints.', 'Design output feeds directly into our own fabrication and installation teams, keeping design intent intact through to completion.'],
+    related: ['cost-estimating', 'quality-assurance', 'structural-steel'] },
+  { id: 'project-management', icon: 'ClipboardList', title: 'Project Management', short: 'Dedicated project management ensuring delivery on time and to specification.',
+    body: ['Every project is assigned a dedicated project manager responsible for programme, cost control, and client communication from kickoff to handover.', 'We maintain in-house project management, estimating, procurement and quality departments so that accountability sits with one team.'],
+    related: ['quality-assurance', 'procurement', 'maintenance'] },
+  { id: 'quality-assurance', icon: 'BadgeCheck', title: 'Quality Assurance', short: 'Structured QA processes applied across every stage of project delivery.',
+    body: ['Our QA framework governs documentation, inspection hold points, and sign-off procedures — ensuring every deliverable is traceable and compliant.', 'QA runs in parallel with project execution, not as an afterthought, reducing rework and protecting delivery timelines.'],
+    related: ['quality-control', 'inspection', 'ndt'] },
+  { id: 'quality-control', icon: 'SearchCheck', title: 'Quality Control', short: 'On-site quality control keeping workmanship to assured standards.',
+    body: ['Dedicated QC personnel monitor fabrication and installation activities against approved specifications and drawings in real time.', 'Non-conformances are identified and resolved before they progress downstream, protecting both programme and quality standards.'],
+    related: ['quality-assurance', 'inspection', 'welding'] },
+  { id: 'material-handling', icon: 'PackageSearch', title: 'Material Handling', short: 'Safe, efficient handling of materials and equipment across site and workshop.',
+    body: ['We manage receipt, storage, and movement of client and project materials, including oversized and heavy-lift components, with full traceability.', 'Material handling is coordinated tightly with our procurement and site teams to avoid delays.'],
+    related: ['procurement', 'mechanical-installation', 'scaffolding'] },
+  { id: 'procurement', icon: 'ShoppingCart', title: 'Procurement', short: 'Procurement of goods, products and services on behalf of, and as per, customer request.',
+    body: ['Our procurement department sources materials, equipment and specialist services from a vetted supplier network, on behalf of clients as required.', 'This includes steel pipeline, valves, rotating equipment, bolts, nuts, washers, gaskets and other auxiliary equipment.'],
+    related: ['material-handling', 'cost-estimating', 'pipeline-fabrication'] },
+  { id: 'civils-structural', icon: 'Building', title: 'Civil Works & Structural Steel', short: 'Civils associated with structural steel, storage tanks and pipeline construction.',
+    body: ['We deliver civil works packages that support structural steel erection, liquid bulk storage tank construction, and steel pipeline installation.', 'Our teams coordinate civils and mechanical scopes together, reducing interface risk on multi-discipline projects.'],
+    related: ['structural-steel', 'storage-tanks', 'pipeline-fabrication'] },
+  { id: 'storage-tanks', icon: 'Container', title: 'Liquid Bulk Storage Tanks', short: 'Manufacture, supply, site installation, erection and repair of storage tanks.',
+    body: ['We manufacture and install liquid bulk storage tanks to client and code specification, including full site erection and repair services.', 'Recent delivery includes the LPG storage upgrade at the Vivo Energy Namibia Tsumeb Depot.'],
+    related: ['civils-structural', 'ndt', 'maintenance'], feature: 'proj1' },
+  { id: 'pressure-vessels', icon: 'Cylinder', title: 'Pressure Vessels & Boilers', short: 'Manufacture, installation and repair of pressure vessels, boilers and heat exchangers.',
+    body: ['Our scope covers pressure vessels, boilers, heat exchangers, reactors, furnaces, columns, stacks and re-tubing services.', 'Work is carried out to the quality and inspection standards required for pressurised process equipment.'],
+    related: ['welding', 'ndt', 'inspection'] },
+  { id: 'pipeline-fabrication', icon: 'GitCommitHorizontal', title: 'Steel Pipeline Fabrication', short: 'Fabrication, site installation and repair of steel pipeline systems.',
+    body: ['We fabricate, install and repair steel pipeline systems, along with associated mechanical and auxiliary equipment — valves, rotating equipment, bolts, nuts, washers and gaskets.', 'Our teams supply and install piping systems for fuel, gas and process applications, including the mechanical gantry works at Tsumeb Depot.'],
+    related: ['welding', 'mechanical-installation', 'storage-tanks'], feature: 'proj2b' },
+  { id: 'structural-steel', icon: 'Building2', title: 'Plate & Structural Steel', short: 'Supply, fabrication and site installation of plate and structural steel.',
+    body: ['From primary structural frames to loading gantries, we supply, fabricate and install plate and structural steelwork on site.', 'Our Tsumeb Depot gantry canopy is a recent example of large-scale structural steel erection delivered on programme.'],
+    related: ['civils-structural', 'welding', 'scaffolding'], feature: 'proj3' },
+  { id: 'ship-repairs', icon: 'Ship', title: 'Ship & Oil Rig Repairs', short: 'Mechanical repair services for ships and offshore oil rigs.',
+    body: ['Our teams undertake ship and oil rig repair scopes at dockside and dry-dock facilities, including structural and mechanical repair work.', 'Recent delivery includes ship repair works for Namdock at Walvis Bay, Namibia.'],
+    related: ['welding', 'grit-blasting', 'maintenance'], feature: 'proj5a' },
+  { id: 'equipment-supply', icon: 'Nut', title: 'Mechanical & Auxiliary Equipment Supply', short: 'Supply of pipeline, mechanical and auxiliary equipment.',
+    body: ['We supply steel pipeline and associated mechanical and auxiliary equipment including valves, rotating equipment, bolts, nuts, washers and gaskets.', 'Equipment supply is coordinated with our procurement department to meet project specification and programme.'],
+    related: ['procurement', 'pipeline-fabrication', 'mechanical-installation'] },
+  { id: 'welding', icon: 'Flame', title: 'Welding', short: 'Qualified welding services across structural, pipeline and pressure equipment scopes.',
+    body: ['Our welding teams are qualified across structural, pipeline and pressure equipment applications, supported by in-house inspection and NDT.', 'Welding quality is verified at every stage against applicable codes and client specification.'],
+    related: ['ndt', 'inspection', 'pressure-vessels'] },
+  { id: 'inspection', icon: 'Eye', title: 'Inspection', short: 'Independent inspection services across fabrication and installation activities.',
+    body: ['We provide inspection services covering fabrication, welding, and installation quality, supporting client and third-party sign-off requirements.', 'Inspection findings feed directly into our quality assurance and quality control processes.'],
+    related: ['ndt', 'quality-assurance', 'quality-control'] },
+  { id: 'ndt', icon: 'Radar', title: 'Non-Destructive Testing', short: 'NDT services verifying weld and material integrity without damage.',
+    body: ['Our non-destructive testing services confirm weld and material integrity on structural, pipeline and pressure equipment work, without compromising the asset.', 'NDT is a core part of our quality assurance process on pressure and pipeline scopes.'],
+    related: ['welding', 'inspection', 'pressure-vessels'] },
+  { id: 'mechanical-installation', icon: 'Wrench', title: 'Mechanical Installation', short: 'Installation of mechanical and auxiliary equipment including valves and rotating equipment.',
+    body: ['We install mechanical and auxiliary equipment — valves, rotating equipment, bolts, nuts, washers and gaskets — to specification and code.', 'Installation teams work closely with engineering and QA to ensure correct fit-up and function on handover.'],
+    related: ['equipment-supply', 'pipeline-fabrication', 'maintenance'] },
+  { id: 'grit-blasting', icon: 'SprayCan', title: 'Grit Blasting & Painting', short: 'Surface preparation and coating on manufactured and existing plant or equipment.',
+    body: ['We provide grit blasting and painting services on new and existing plant and equipment, protecting assets against corrosion in demanding environments.', 'Surface preparation is carried out to the coating specification required for the operating environment.'],
+    related: ['ship-repairs', 'maintenance', 'insulation'] },
+  { id: 'scaffolding', icon: 'Layers', title: 'Scaffolding', short: 'Scaffolding solutions supporting safe access across project sites.',
+    body: ['We design and erect scaffolding solutions that provide safe, compliant access for fabrication, installation and maintenance activities.', 'Scaffolding is planned around project sequencing to avoid access bottlenecks on site.'],
+    related: ['grit-blasting', 'insulation', 'maintenance'] },
+  { id: 'insulation', icon: 'Snowflake', title: 'Insulation', short: 'Insulation services on manufactured and existing plant or equipment.',
+    body: ['We install insulation on new and existing plant and equipment to support thermal performance and personnel protection requirements.', 'Insulation work is coordinated alongside mechanical installation and coating scopes.'],
+    related: ['grit-blasting', 'mechanical-installation', 'maintenance'] },
+  { id: 'maintenance', icon: 'Settings2', title: 'Maintenance', short: 'Ongoing maintenance for bulk storage terminals, oil rigs, and existing plant.',
+    body: ['We provide maintenance services for bulk storage tank terminals, oil rigs, and existing plant and equipment — keeping assets running reliably.', 'Maintenance scopes range from planned shutdown work to reactive mechanical repairs.'],
+    related: ['storage-tanks', 'ship-repairs', 'inspection'], feature: 'proj1' },
+]
+
+export const FEATURED_SERVICE_IDS = ['pipeline-fabrication', 'storage-tanks', 'structural-steel', 'ship-repairs']
+
+export const PROJECTS = [
+  { id: 'tsumeb-lpg', tag: 'Storage Upgrade', client: 'Vivo Energy Namibia', location: 'Tsumeb Depot, Namibia',
+    title: 'LPG Storage Upgrade', img: 'proj1',
+    summary: 'A comprehensive upgrade of mechanical infrastructure at the Tsumeb Depot terminal, including colour-coded fuel and LPG piping routing and associated structural supports — delivered to specification and international best practice.',
+    services: ['Steel Pipeline Fabrication', 'Storage Tanks', 'Structural Steel'], gallery: ['proj1'] },
+  { id: 'tsumeb-gantry', tag: 'Mechanical Installation', client: 'Vivo Energy Namibia', location: 'Tsumeb Depot, Namibia',
+    title: 'Mechanical Gantry Installation', img: 'proj2a',
+    summary: 'Installation of mechanical loading gantry infrastructure at the Tsumeb Depot, integrating piping, valves and auxiliary equipment within a multi-bay loading structure.',
+    services: ['Mechanical Installation', 'Pipeline Fabrication', 'Equipment Supply'], gallery: ['proj2a', 'proj2b'] },
+  { id: 'tsumeb-civils', tag: 'Civils / Structural', client: 'Vivo Energy Namibia', location: 'Tsumeb Depot, Namibia',
+    title: 'Civils / Structural Gantry', img: 'proj3',
+    summary: 'Erection of the primary structural steel canopy frame for a multi-bay loading gantry, highlighting precise steel trusses and overhead column alignments delivered on programme.',
+    services: ['Structural Steel', 'Civil Works', 'Project Management'], gallery: ['proj3'] },
+  { id: 'walvis-metering', tag: 'Metering Bay', client: 'Vivo Energy Namibia', location: 'Walvis Bay Depot, Namibia',
+    title: 'Walvis Bay Metering Bay', img: 'proj4a',
+    summary: "Delivery of metering bay infrastructure at the Walvis Bay Depot, supporting accurate custody-transfer measurement within the terminal's fuel distribution system.",
+    services: ['Mechanical Installation', 'Pipeline Fabrication', 'Inspection'], gallery: ['proj4a', 'proj4b'] },
+  { id: 'namdock-repairs', tag: 'Ship Repairs', client: 'Namdock', location: 'Walvis Bay, Namibia',
+    title: 'Namdock Ship Repairs', img: 'proj5a',
+    summary: 'Mechanical and structural ship repair works carried out at Walvis Bay for Namdock, covering hull and topside mechanical repair scope within a dry-dock environment.',
+    services: ['Ship Repairs', 'Welding', 'Grit Blasting & Painting'], gallery: ['proj5a', 'proj5b', 'proj5c'] },
+]
+
+export const GALLERY = [
+  { img: 'proj1', cat: 'Storage Tanks', cap: 'Tsumeb Depot — LPG Storage Upgrade' },
+  { img: 'proj2a', cat: 'Mechanical', cap: 'Tsumeb Depot — Mechanical Gantry Installation' },
+  { img: 'proj2b', cat: 'Pipelines', cap: 'Tsumeb Depot — Gantry Piping Detail' },
+  { img: 'proj3', cat: 'Structural Steel', cap: 'Tsumeb Depot — Structural Gantry Canopy' },
+  { img: 'proj4a', cat: 'Fabrication', cap: 'Walvis Bay Depot — Metering Bay' },
+  { img: 'proj4b', cat: 'Pipelines', cap: 'Walvis Bay Depot — Metering Bay Detail' },
+  { img: 'proj5a', cat: 'Marine', cap: 'Namdock — Ship Repairs, Walvis Bay' },
+  { img: 'proj5b', cat: 'Marine', cap: 'Namdock — Hull Repair Works' },
+  { img: 'proj5c', cat: 'Marine', cap: 'Namdock — Topside Mechanical Repairs' },
+]
+
+export const WHY = [
+  { icon: 'HardHat', title: 'Safety First', desc: 'In-house safety department overseeing every stage of site execution.' },
+  { icon: 'BadgeCheck', title: 'Certified Quality', desc: 'Structured QA/QC processes applied from design through to handover.' },
+  { icon: 'Users', title: 'Experienced Team', desc: 'Qualified site teams and engineers with proven turnkey delivery experience.' },
+  { icon: 'Timer', title: 'On-Time Delivery', desc: 'Dedicated project management keeping programmes on schedule.' },
+  { icon: 'BadgeDollarSign', title: 'Competitive Solutions', desc: 'Transparent, detailed estimating that protects client budgets.' },
+  { icon: 'Globe', title: 'International Capability', desc: 'Proven delivery across Namibia and South Africa, with global bid experience.' },
+]
+
+export const SAFETY = [
+  { icon: 'HardHat', title: 'Health & Safety', desc: 'Dedicated safety department governing site conduct and risk management.' },
+  { icon: 'BadgeCheck', title: 'Quality Assurance', desc: 'Documented QA processes applied across every project phase.' },
+  { icon: 'SearchCheck', title: 'Quality Control', desc: 'On-site QC monitoring workmanship against specification in real time.' },
+  { icon: 'Leaf', title: 'Environmental & Compliance', desc: 'Environmentally responsible practices aligned to regulatory compliance.' },
+]
+
+export const STATS = [
+  { count: 5, label: 'Industries Served' },
+  { count: 10, label: 'Engineering Services' },
+  { count: 20, label: 'Projects Completed' },
+  { count: 3, label: 'Countries Worked', noPlus: true },
+  { count: 40, label: 'Years Experience' },
+]
+
+export const VALUES = ['Safety', 'Quality', 'Honesty', 'Trust', 'Respect', 'Efficiency', 'Excellence']
+
+export const DIRECTOR = {
+  role: 'Director',
+  name: 'David Atcha',
+  company: 'Oil and Gas Construction (Pty) Ltd',
+  phone: '+27 74 482 7486',
+  phoneHref: '+27744827486',
+  email: 'atchadavid9@gmail.com',
+}
