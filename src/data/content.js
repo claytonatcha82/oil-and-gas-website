@@ -149,5 +149,5 @@ export const DIRECTOR = {
   company: 'Oil and Gas Construction (Pty) Ltd',
   phone: '+27 74 482 7486',
   phoneHref: '+27744827486',
-  email: 'atchadavid9@gmail.com',
+  email: 'info.oilgasconstruction@gmail.com',
 }
